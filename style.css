@@ -508,5 +508,18 @@ body {
 
   .img-info-name { font-size: 0.9rem; }
   .img-info { gap: 4px; padding: 8px 10px 8px 8px; }
-  .img-info-did { display: none; }
+  .img-info-did { font-size: 0.62rem; }
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+  html, body { overflow: auto; height: auto; }
+
+  .container {
+    height: auto;
+    min-height: 100vh;
+    padding: 0.6rem 1rem 1rem;
+    justify-content: flex-start;
+  }
+
+  .img-section { height: 35vh; }
 }
