@@ -486,7 +486,7 @@ body {
     justify-content: flex-start;
   }
 
-  .img-section { height: 22vh; }
+  .img-section { height: 32vh; }
 
   .title { font-size: 1.2rem; }
   .stat-chip { padding: 2px 7px; font-size: 0.68rem; }
@@ -506,9 +506,18 @@ body {
   .nav-row { padding-bottom: 0.5rem; }
   .nav-btn { padding: 9px 16px; font-size: 0.8rem; }
 
-  .img-info-name { font-size: 0.9rem; }
-  .img-info { gap: 4px; padding: 8px 10px 8px 8px; }
-  .img-info-did { font-size: 0.62rem; }
+  .img-fg { flex: 0 0 36%; }
+
+  .img-info {
+    gap: 3px;
+    padding: 8px 10px 8px 8px;
+    overflow-y: auto;
+  }
+
+  .img-info-name { font-size: 0.85rem; }
+  .img-info-desc { font-size: 0.62rem; }
+  .info-val { font-size: 0.62rem; }
+  .img-info-did { font-size: 0.6rem; padding: 5px 7px; }
 }
 
 @media (max-width: 900px) and (orientation: landscape) {
@@ -521,5 +530,19 @@ body {
     justify-content: flex-start;
   }
 
-  .img-section { height: 35vh; }
+  .img-section { height: 40vh; }
+
+  .img-fg { flex: 0 0 32%; }
+
+  .img-info {
+    gap: 3px;
+    padding: 8px 10px 8px 8px;
+    overflow-y: auto;
+    font-size: 0.7rem;
+  }
+
+  .img-info-name { font-size: 0.9rem; }
+  .img-info-desc { font-size: 0.65rem; }
+  .info-val { font-size: 0.65rem; }
+  .img-info-did { font-size: 0.62rem; padding: 5px 7px; }
 }
