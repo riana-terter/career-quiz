@@ -58,7 +58,7 @@ body {
 .title {
   font-family: 'Playfair Display', serif;
   font-size: 1.6rem;
-  font-weight: 300;
+  font-weight: 900;
   color: var(--dark-red);
   letter-spacing: -0.03em;
   white-space: nowrap;
@@ -349,7 +349,7 @@ body {
 
 .answer-box {
   display: none;
-  padding: 9px 16px;
+  padding: 11px 16px;
   border-radius: 10px;
 }
 
@@ -477,10 +477,36 @@ body {
 /* ── Responsive ── */
 
 @media (max-width: 480px) {
-  .title { font-size: 1.3rem; }
-  .options-grid { grid-template-columns: 1fr 1fr; }
-  .card-body { padding: 0.9rem 1.2rem 0.6rem; }
-  .options-wrap { padding: 0 1.2rem 1rem; }
-  .show-btn-wrap { padding: 0; }
-  .answer-slot { padding: 0 1.2rem 0.8rem; }
+  html, body { overflow: auto; height: auto; }
+
+  .container {
+    height: auto;
+    min-height: 100vh;
+    padding: 0.7rem 0.9rem 1.2rem;
+    justify-content: flex-start;
+  }
+
+  .img-section { height: 22vh; }
+
+  .title { font-size: 1.2rem; }
+  .stat-chip { padding: 2px 7px; font-size: 0.68rem; }
+
+  .card-body { padding: 0.7rem 1rem 0.5rem; }
+  .clue-item { padding: 6px 0; }
+  .clue-text { font-size: 0.8rem; }
+
+  .options-grid { grid-template-columns: 1fr 1fr; gap: 7px; }
+  .opt { padding: 9px 10px; font-size: 0.78rem; }
+
+  .answer-slot { padding: 0 1rem 0.7rem; }
+  .show-btn { font-size: 0.78rem; padding: 9px 10px; }
+
+  .options-wrap { padding: 0 1rem 0.8rem; }
+
+  .nav-row { padding-bottom: 0.5rem; }
+  .nav-btn { padding: 9px 16px; font-size: 0.8rem; }
+
+  .img-info-name { font-size: 0.9rem; }
+  .img-info { gap: 4px; padding: 8px 10px 8px 8px; }
+  .img-info-did { display: none; }
 }
